@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <div className="text-white min-h-screen">
-        <div className="row-center m-6 absolute top-0 left-0 right-0 bottom-0">
+        <div className="row-center m-4 absolute top-0 left-0 right-0 bottom-0">
           <div className="w-full h-full bg-[#636c78] rounded-2xl relative">
             <Header />
             <Content />

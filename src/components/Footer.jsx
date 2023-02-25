@@ -6,14 +6,24 @@ const Footer = () => {
       <p className="row-center">
         <YellowHeart />
         <div>
+          You can browse{" "}
+          <a
+            href="https://github.com/tdsrmd"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            all my projects
+          </a>{" "}
+          or you may like{" "}
           <a
             href="https://github.com/tdsrmd/IphoneBatteryCrcle"
             target="_blank"
+            rel="noreferrer"
             className="underline"
           >
-            Like & Follow
+            this project
           </a>{" "}
-          <span>from you. New free to use projects from us.</span>
         </div>
       </p>
     </footer>
