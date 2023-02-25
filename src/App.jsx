@@ -1,10 +1,14 @@
+//Components
 import Content from "./components/Content";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+//Patterns
 import Pattern from "./assets/pattern.svg";
 import Pattern2 from "./assets/pattern-02.svg";
 import Pattern3 from "./assets/pattern-03.svg";
 import Pattern4 from "./assets/pattern-04.svg";
-import { YellowHeart } from "./assets/icons";
+
 const App = () => {
   return (
     <>
@@ -37,21 +41,7 @@ const App = () => {
           />
         </div>
       </div>
-      <footer className="bg-[#4C4E8E] h-10 w-full row-center text-white">
-        <p className="row-center">
-          <YellowHeart />
-          <div>
-            <a
-              href="https://github.com/tdsrmd/IphoneBatteryCrcle"
-              target="_blank"
-              className="underline"
-            >
-              Like & Follow
-            </a>{" "}
-            <span>from you. New free to use projects from us.</span>
-          </div>
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 };
