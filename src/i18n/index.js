@@ -10,6 +10,8 @@ const resources = {
       content2:
         "Ayarlar > Gizlilik ve Güvenlik > Analizler ve İyileştirmeler > Analiz Verileri",
       content3: "adımlarını izleyerek erişebilirsiniz.",
+      file1: "Dosyanızı ekleyin",
+      file2: "en fazla 1mb",
     },
   },
   en: {
@@ -19,6 +21,8 @@ const resources = {
       content2:
         "Settings > Privacy & Security > Analytics & Improvements > Analytics Data",
       content3: "",
+      file1: "Add your file",
+      file2: "max 1mb",
     },
   },
 };

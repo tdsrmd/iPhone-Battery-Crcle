@@ -24,8 +24,8 @@ const Content = () => {
               <AddFile />
             </div>
             <div className="text-center">
-              <p className="text-[18px]">Dosyanızı ekleyin</p>
-              <p className="text-sm font-thin">en fazla 1mb</p>
+              <p className="text-[18px]">{t("file1")}</p>
+              <p className="text-sm font-thin">{t("file2")}</p>
             </div>
           </div>
         </div>
