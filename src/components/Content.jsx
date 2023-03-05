@@ -1,11 +1,13 @@
+import { useTranslation } from "react-i18next";
 import { AddFile } from "../assets/icons";
 
 const Content = () => {
+  const { t } = useTranslation();
   return (
     <div className="w-full row-center">
       <div className="w-1/3 col-center gap-y-8">
         <div className="font-thin text-center">
-          <p className="text-7xl">İphone Şarj Dögüsü Hesapla</p>
+          <p className="text-7xl">{t("welcome")}</p>
           <div className="text-2xl mt-4">
             <span>Analiz dosyanıza</span>
             <div>
@@ -18,7 +20,7 @@ const Content = () => {
           </div>
         </div>
         <div className="addFileWrap">
-          <div className="h-full col-center addFileColor gap-y-4">
+          <div className="h-full col-center addFileColorAnimate gap-y-4">
             <div className="bg-white rounded-full p-4 shadow-xl">
               <AddFile />
             </div>

@@ -11,6 +11,51 @@
   }
 }
 
+@keyframes up-down {
+  0% {
+    transform: translateY(0); /* 0 pozisyonunda başlar */
+  }
+  50% {
+    transform: translateY(-50px); /* 50% pozisyonunda yukarı gider */
+  }
+  100% {
+    transform: translateY(
+      0
+    ); /* 100% pozisyonunda başlangıç pozisyonuna geri döner */
+  }
+}
+.upDownAnimate {
+  animation: up-down 10s ease infinite; /* 1 saniye sürer, kolay geçiş, sonsuz tekrar */
+}
+@keyframes up-down-reverse {
+  0% {
+    transform: translateY(0); /* 0 pozisyonunda başlar */
+  }
+  50% {
+    transform: translateY(50px); /* 50% pozisyonunda yukarı gider */
+  }
+  100% {
+    transform: translateY(
+      0
+    ); /* 100% pozisyonunda başlangıç pozisyonuna geri döner */
+  }
+}
+.upDownAnimateReverse {
+  animation: up-down-reverse 10s ease infinite; /* 1 saniye sürer, kolay geçiş, sonsuz tekrar */
+}
+
+.addFileColorAnimate {
+  border-radius: 30px;
+  background-color: #666f7c;
+  animation: gradient 3s ease infinite;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(167, 193, 211, 0.2),
+    rgba(213, 217, 225, 0.2) 70%,
+    rgba(250, 236, 236, 0.2)
+  );
+  background-size: 400% 400%;
+}
 .addFileColor {
   border-radius: 30px;
   background-color: #666f7c;
@@ -20,6 +65,18 @@
     rgba(213, 217, 225, 0.2) 70%,
     rgba(250, 236, 236, 0.2)
   );
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .addFileWrap {

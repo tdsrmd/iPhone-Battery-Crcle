@@ -30,14 +30,14 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-1/3 left-0 ">
+        <div className="absolute top-1/3 left-0 upDownAnimate">
           <img
             alt="Pattern"
             src={Pattern}
             className=" rounded-tr-2xl rounded-br-2xl shadow-xl"
           />
         </div>
-        <div className="absolute top-1/4 right-0 ">
+        <div className="absolute top-1/4 right-0 upDownAnimateReverse">
           <img
             alt="Pattern"
             src={Pattern4}
