@@ -25,7 +25,7 @@
   }
 }
 .upDownAnimate {
-  animation: up-down 10s ease infinite; /* 1 saniye sürer, kolay geçiş, sonsuz tekrar */
+  animation: up-down 10s linear infinite; /* 1 saniye sürer, kolay geçiş, sonsuz tekrar */
 }
 @keyframes up-down-reverse {
   0% {
@@ -41,7 +41,7 @@
   }
 }
 .upDownAnimateReverse {
-  animation: up-down-reverse 10s ease infinite; /* 1 saniye sürer, kolay geçiş, sonsuz tekrar */
+  animation: up-down-reverse 10s linear infinite; /* 1 saniye sürer, kolay geçiş, sonsuz tekrar */
 }
 
 .addFileColorAnimate {

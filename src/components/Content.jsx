@@ -9,14 +9,13 @@ const Content = () => {
         <div className="font-thin text-center">
           <p className="text-7xl">{t("welcome")}</p>
           <div className="text-2xl mt-4">
-            <span>Analiz dosyanıza</span>
+            <span>{t("content1")}</span>
             <div>
               <span className=" text-sm addFileColor py-2 px-4 rounded-full">
-                Ayarlar &gt; Gizlilik ve Güvenlik &gt; Analizler ve
-                İyileştirmeler &gt; Analiz Verileri
+                {t("content2")}
               </span>
             </div>
-            <span>adımlarını izleyerek erişebilirsiniz.</span>
+            <span>{t("content3")}</span>
           </div>
         </div>
         <div className="addFileWrap">

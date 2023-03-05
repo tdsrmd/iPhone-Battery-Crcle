@@ -5,18 +5,26 @@ import LanguageDetector from "i18next-browser-languagedetector";
 const resources = {
   tr: {
     translation: {
-      welcome: "İphone",
+      welcome: "İphone Şarj Döngüsü Öğrenme",
+      content1: "Analiz dosyanıza",
+      content2:
+        "Ayarlar > Gizlilik ve Güvenlik > Analizler ve İyileştirmeler > Analiz Verileri",
+      content3: "adımlarını izleyerek erişebilirsiniz.",
     },
   },
   en: {
     translation: {
-      welcome: "Hi Trying",
+      welcome: "Learn iPhone Charge Cycle",
+      content1: "You can access your analytics file by going to",
+      content2:
+        "Settings > Privacy & Security > Analytics & Improvements > Analytics Data",
+      content3: "",
     },
   },
 };
 
 i18n.use(initReactI18next).use(LanguageDetector).init({
-  fallbackLng: "tr",
+  fallbackLng: "en",
   resources,
 });
 
