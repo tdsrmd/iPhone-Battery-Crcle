@@ -20,17 +20,17 @@ const Content = () => {
   };
   return (
     <div className="w-full row-center">
-      <div className="w-1/3 col-center gap-y-8">
+      <div className="px-3 xl:w-1/3 lg:px-0 col-center gap-y-8">
         <div className="font-thin text-center">
-          <p className="text-7xl">{t("welcome")}</p>
-          <div className="text-2xl mt-4">
+          <p className="text-3xl lg:text-7xl">{t("welcome")}</p>
+          <div className="text-xl lg:text-2xl mt-4">
             <span>{t("content1")}</span>
-            <div>
-              <span className=" text-sm addFileColor py-2 px-4 rounded-full">
+            <div className="mb-1">
+              <span className="text-xs lg:text-sm addFileColor py-2 px-4 rounded-full">
                 {t("content2")}
               </span>
             </div>
-            <span>{t("content3")}</span>
+            <span className="text-xl lg:text-2xl">{t("content3")}</span>
             <p className="text-sm mt-4">
               {t("content4")}: Analytics-2023-02-27-030005
             </p>

@@ -10,18 +10,18 @@ const App = () => {
   return (
     <>
       <div className="text-white min-h-screen">
-        <div className="row-center m-4 absolute top-0 left-0 right-0 bottom-0">
+        <div className="row-center m-2 lg:m-4 absolute top-0 left-0 right-0 bottom-0">
           <div className="w-full h-full bg-[#636c78] rounded-2xl relative">
             <Header />
             <Content />
-            <div className="absolute bottom-0 left-60">
+            <div className="absolute bottom-0 left-60 hidden lg:block">
               <img
                 alt="Pattern"
                 src={Pattern2}
-                className=" rounded-tl-3xl rounded-tr-3xl shadow-xl"
+                className="rounded-tl-3xl rounded-tr-3xl shadow-xl"
               />
             </div>
-            <div className="absolute bottom-20 right-20 ">
+            <div className="absolute bottom-20 right-20 hidden lg:block">
               <img
                 alt="Pattern"
                 src={Pattern3}
@@ -30,14 +30,14 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-1/3 left-0 upDownAnimate">
+        <div className="absolute top-1/3 left-0 upDownAnimate hidden lg:block">
           <img
             alt="Pattern"
             src={Pattern}
             className=" rounded-tr-2xl rounded-br-2xl shadow-xl"
           />
         </div>
-        <div className="absolute top-1/4 right-0 upDownAnimateReverse">
+        <div className="absolute top-1/4 right-0 upDownAnimateReverse hidden lg:block">
           <img
             alt="Pattern"
             src={Pattern4}
