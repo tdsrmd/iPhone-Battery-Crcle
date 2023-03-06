@@ -3,7 +3,7 @@ import { YellowHeart } from "../assets/icons";
 const Footer = () => {
   return (
     <footer className="bg-[#4C4E8E] h-10 w-full row-center text-white">
-      <p className="row-center">
+      <div className="row-center">
         <YellowHeart />
         <div>
           You can browse{" "}
@@ -25,7 +25,7 @@ const Footer = () => {
             this project
           </a>{" "}
         </div>
-      </p>
+      </div>
     </footer>
   );
 };

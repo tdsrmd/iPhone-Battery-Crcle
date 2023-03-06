@@ -32,7 +32,7 @@ const YellowHeart = () => {
         <path
           d="M23.3077 15.7259L17.1024 22.5002L10.897 15.7259C9.6585 14.3738 9.70835 12.2947 11.0103 11.0027C12.4639 9.55999 14.8585 9.69161 16.1427 11.2848L17.1024 12.4753L18.062 11.2848C19.3463 9.69161 21.7408 9.55999 23.1945 11.0027C24.4964 12.2947 24.5462 14.3738 23.3077 15.7259Z"
           fill="#FFE336"
-          fill-opacity="0.5"
+          fillOpacity="0.5"
         />
       </g>
       <path
@@ -47,9 +47,9 @@ const YellowHeart = () => {
           width="34.2051"
           height="32.5"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -65,5 +65,24 @@ const YellowHeart = () => {
     </svg>
   );
 };
+const Refresh = () => {
+  return (
+    <svg
+      height="24"
+      width="24"
+      clipRule="evenodd"
+      fillRule="evenodd"
+      strokeLinejoin="round"
+      strokeMiterlimit="2"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m3.508 6.726c1.765-2.836 4.911-4.726 8.495-4.726 5.518 0 9.997 4.48 9.997 9.997 0 5.519-4.479 9.999-9.997 9.999-5.245 0-9.553-4.048-9.966-9.188-.024-.302.189-.811.749-.811.391 0 .715.3.747.69.351 4.369 4.012 7.809 8.47 7.809 4.69 0 8.497-3.808 8.497-8.499 0-4.689-3.807-8.497-8.497-8.497-3.037 0-5.704 1.597-7.206 3.995l1.991.005c.414 0 .75.336.75.75s-.336.75-.75.75h-4.033c-.414 0-.75-.336-.75-.75v-4.049c0-.414.336-.75.75-.75s.75.335.75.75z"
+        fillRule="nonzero"
+      />
+    </svg>
+  );
+};
 
-export { AddFile, YellowHeart };
+export { AddFile, YellowHeart, Refresh };

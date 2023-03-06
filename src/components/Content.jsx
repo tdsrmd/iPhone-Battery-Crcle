@@ -1,8 +1,23 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { AddFile } from "../assets/icons";
+import { AddFile, Refresh } from "../assets/icons";
 
 const Content = () => {
   const { t } = useTranslation();
+  const [cycleCount, setCycleCount] = useState("");
+
+  const handleSearch = (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.readAsText(file);
+
+    reader.onload = (event) => {
+      const content = event.target.result;
+      const results = content.match(/"last_value_CycleCount":(\d+)/);
+
+      results === null ? setCycleCount(t("file3")) : setCycleCount(results[1]);
+    };
+  };
   return (
     <div className="w-full row-center">
       <div className="w-1/3 col-center gap-y-8">
@@ -16,19 +31,42 @@ const Content = () => {
               </span>
             </div>
             <span>{t("content3")}</span>
+            <p className="text-sm mt-4">
+              {t("content4")}: Analytics-2023-02-27-030005
+            </p>
+            <p className="text-sm">{t("content5")}</p>
           </div>
         </div>
-        <div className="addFileWrap">
-          <div className="h-full col-center addFileColorAnimate gap-y-4">
-            <div className="bg-white rounded-full p-4 shadow-xl">
-              <AddFile />
-            </div>
-            <div className="text-center">
-              <p className="text-[18px]">{t("file1")}</p>
-              <p className="text-sm font-thin">{t("file2")}</p>
+        {!cycleCount ? (
+          <div className="addFileWrap">
+            <input
+              type="file"
+              className="absolute w-[250px] h-[200px] opacity-0 bg-black cursor-pointer"
+              onChange={handleSearch}
+            />
+            <div className="h-full col-center addFileColorAnimate gap-y-4">
+              <div className="bg-white rounded-full p-4 shadow-xl">
+                <AddFile />
+              </div>
+              <div className="text-center">
+                <p className="text-[18px]">{t("file1")}</p>
+                <p className="text-sm font-thin">{t("file2")}</p>
+              </div>
             </div>
           </div>
-        </div>
+        ) : (
+          <>
+            <div>
+              <p className="text-6xl font-thin animate-pulse">{cycleCount}</p>
+            </div>
+            <div
+              className="bg-white rounded-full p-4 shadow-xl cursor-pointer"
+              onClick={() => setCycleCount("")}
+            >
+              <Refresh />
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
