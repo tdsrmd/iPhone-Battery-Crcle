@@ -5,7 +5,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 const resources = {
   tr: {
     translation: {
-      welcome: "İphone Şarj Döngüsü Öğrenme",
+      welcome: "iPhone Şarj Döngüsü Öğrenme",
       content1: "Analiz dosyanıza",
       content2:
         "Ayarlar > Gizlilik ve Güvenlik > Analizler ve İyileştirmeler > Analiz Verileri",
