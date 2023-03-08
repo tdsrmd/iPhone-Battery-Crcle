@@ -8,7 +8,7 @@ const Header = () => {
     await i18n.changeLanguage(lang);
   };
   return (
-    <header className="px-10 lg:px-40 py-16 flex  items-center justify-between">
+    <header className="px-10 lg:px-40 h-20 flex  items-center justify-between">
       <div className="font-bold text-2xl">Logo</div>
       <div className="flex gap-x-2">
         <button onClick={() => changeLang("tr")}>TR</button>

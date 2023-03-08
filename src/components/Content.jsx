@@ -19,10 +19,10 @@ const Content = () => {
     };
   };
   return (
-    <div className="w-full row-center">
-      <div className="px-3 xl:w-1/3 lg:px-0 col-center gap-y-8">
+    <div className="h-[calc(100%_-_56px)] flex justify-center">
+      <div className=" lg:w-2/4 2xl:w-1/3 lg:px-0 col-center gap-y-8">
         <div className="font-thin text-center">
-          <p className="text-3xl lg:text-7xl">{t("welcome")}</p>
+          <p className="text-3xl lg:text-5xl 2xl:text-7xl">{t("welcome")}</p>
           <div className="text-xl lg:text-2xl mt-4">
             <span>{t("content1")}</span>
             <div className="mb-1">
@@ -38,7 +38,7 @@ const Content = () => {
           </div>
         </div>
         {!cycleCount ? (
-          <div className="addFileWrap">
+          <div className="addFileWrap w-[252px] h-[203px] 2xl:w-[282px] 2xl:h-[233px]">
             <input
               type="file"
               className="absolute w-[250px] h-[200px] opacity-0 bg-black cursor-pointer"
@@ -46,7 +46,7 @@ const Content = () => {
             />
             <div className="h-full col-center addFileColorAnimate gap-y-4">
               <div className="bg-white rounded-full p-4 shadow-xl">
-                <AddFile />
+                <AddFile className="2xl:w-6 2xl:h-6 w-4 h-4" />
               </div>
               <div className="text-center">
                 <p className="text-[18px]">{t("file1")}</p>
