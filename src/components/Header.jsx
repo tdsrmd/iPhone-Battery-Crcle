@@ -9,7 +9,9 @@ const Header = () => {
   };
   return (
     <header className="px-10 lg:px-40 h-20 flex  items-center justify-between">
-      <div className="font-bold text-2xl">Logo</div>
+      <div className=" text-2xl">
+        battery<span className="font-thin">l∞p</span>
+      </div>
       <div className="flex gap-x-2">
         <button onClick={() => changeLang("tr")}>TR</button>
         <button onClick={() => changeLang("en")}>EN</button>
