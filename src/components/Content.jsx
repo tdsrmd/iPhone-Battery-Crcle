@@ -38,7 +38,7 @@ const Content = () => {
           </div>
         </div>
         {!cycleCount ? (
-          <div className="addFileWrap w-[252px] h-[203px] 2xl:w-[282px] 2xl:h-[233px]">
+          <div className="addFileWrap w-[202px] h-[163px] 2xl:w-[282px] 2xl:h-[233px] mb-10">
             <input
               type="file"
               className="absolute w-[250px] h-[200px] opacity-0 bg-black cursor-pointer"
@@ -57,7 +57,9 @@ const Content = () => {
         ) : (
           <>
             <div>
-              <p className="text-6xl font-thin animate-pulse">{cycleCount}</p>
+              <p className="text-2xl xl:text-6xl font-thin animate-pulse">
+                {cycleCount}
+              </p>
             </div>
             <div
               className="bg-white rounded-full p-4 shadow-xl cursor-pointer"
